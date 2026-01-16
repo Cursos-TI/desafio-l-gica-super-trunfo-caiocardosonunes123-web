@@ -1,28 +1,30 @@
 #include <stdio.h>
-int main (){
-    int idade;
-    printf ("digite a sua idade: \n");
-    scanf ("%d", idade);
+#include <strin.h>
+#include <stdlib.h>
 
-    if (idade < 12 ){{
-        printf ("digite a sua idade\n");
 
-        if (idade >= && idade < 18){
-            pritnf ("voce e apenas um adolescente\n");
+//Estrutura para armazenar os dados de uma carta
+typedef struct logicaSuperTrunfo{
+    char nomePais [50];
+    float area;   //Km2
+    long popilaçao;  //habitantes 
+    float pib;  /// em bilhoes de dolares
+    int pontosTuristicos;  
+}carta;
 
-            else if (idade >=18 && < 60){
-                printf ("voce e um adulto\n");
-                else{
-                    printf("voce e um idoso\n");
 
-                }
-            }
+// funcao para ler uma carta vom validacao
+void LerCarta (Carta *c){
+    pritnt("digite o nome do ´pais:");
+    scanf("%[^\n]", c->nomePais);
 
-        }
+
+    printf ("digite a area (km2):";
+    while (scanf("%f", &c->area ))!='  || c->area'< =0 {
+        printf ("Valor invalido. Digite novamente:");
+    whilw (getchar()!='\n'); // limpa buffer
+
     }
- 
-
-
-
-    return 0;
+    printf ("Digite a populçao:");
+    
 }
